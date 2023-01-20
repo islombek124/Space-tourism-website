@@ -1,0 +1,159 @@
+body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: right center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.sct {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: auto;
+  padding: 0 165px;
+  margin-bottom: 131px;
+}
+
+.sct .aboutSct {
+  max-width: 450px;
+  width: 100%;
+}
+
+.sct .aboutSct h5 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+}
+
+.sct .aboutSct h1 {
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  color: #FFFFFF;
+  margin: 24px 0;
+}
+
+.sct .aboutSct p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+.sctBtn {
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+  font-family: 'Bellefair', serif;
+  background: #FFFFFF;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0B0D17;
+  cursor: pointer;
+}
+
+.sctBtn:hover {
+  box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-position: center bottom;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sct {
+    flex-direction: column;
+    align-items: center;
+    margin: 106px auto 77px auto;
+    padding: 0 160px;
+    gap: 110px;
+  }
+
+  .sct .aboutSct h5 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  .sct .aboutSct h1 {
+    line-height: 150px;
+  }
+
+  .sct .aboutSct p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .aboutSct {
+    text-align: center;
+  }
+
+  .sctBtn {
+    width: 242px;
+    height: 242px;
+  }
+
+  .sctBtn:hover {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-position: center bottom;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sct {
+    flex-direction: column;
+    align-items: center;
+    margin: 48px auto;
+    padding: 0 24px;
+    gap: 80px;
+  }
+
+  .sct .aboutSct h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .sct .aboutSct h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .sct .aboutSct p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .aboutSct {
+    text-align: center;
+  }
+
+  .sctBtn {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+  }
+
+  .sctBtn:hover {
+    box-shadow: 0 0 0 0;
+  }
+}

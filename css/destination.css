@@ -1,0 +1,234 @@
+body {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: max-content;
+}
+
+.sct {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 76px 165px;
+  margin: 0 auto;
+  gap: 150px;
+  position: relative;
+}
+
+.sct .title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  z-index: 11;
+}
+
+.sct .title span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.sct .left img {
+  margin-top: 97px;
+  object-fit: cover;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  max-width: 445px;
+  width: 100%;
+}
+
+.tab .tab_item .about h1 {
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tab .tab_item .about p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+.tab .tab_item .about hr {
+  width: 100%;
+  background-color: #383B4B;
+  border: 1px solid #383B4B;
+  position: relative;
+  display: block;
+  margin: 54px auto 28px auto;
+}
+
+.tab .tab_links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.tab .tab_links .tab_link {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab .tab_links .tab_link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  bottom: -12px;
+  display: none;
+}
+
+.tab .tab_links .tab_link:hover::before {
+  display: block;
+}
+
+.tab .tab_links .tab_link.tab__link__active::before {
+  display: block;
+}
+
+.tab .tab_item {
+  display: none;
+}
+
+.tab .tab__item_active {
+  display: flex;
+}
+
+.tab_items .tab_item .Cdate {
+  display: flex;
+  gap: 79px;
+}
+
+.tab_items .tab_item .Cdate .distance span,
+.tab_items .tab_item .Cdate .time span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+.tab_items .tab_item .Cdate .distance h4,
+.tab_items .tab_item .Cdate .time h4 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  body {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    background-position: center bottom;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sct {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 28px;
+    gap: 53px;
+  }
+
+  .sct .left img {
+    margin-top: 60px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .sct .left .title {
+    text-align: center;
+  }
+
+  .sct .tab {
+    align-items: center;
+    text-align: center;
+  }
+
+  .tab_items .tab_item .Cdate {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-position: center bottom;
+  }
+
+  .sct {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 28px;
+    gap: 53px;
+  }
+
+  .sct .left .title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .sct .left img {
+    margin-top: 32px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .tab .tab_links li {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tab .tab_item .about h1 {
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .tab .tab_item .about p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .sct .left .title {
+    text-align: center;
+  }
+
+  .sct .tab {
+    align-items: center;
+    text-align: center;
+  }
+
+  .tab_items .tab_item .Cdate {
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
